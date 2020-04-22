@@ -23,15 +23,15 @@ DomElement.prototype.createElement = function(text) {
 
     newElem.style.cssText = 'height: ' + this.height + 'px;' +
     'width: ' + this.width + '%;' + 
-    'fontSize: ' + this.fontSize + 'px;' +
-    'bg:' + this.bg + ';';
+    'font-size: ' + this.fontSize + 'px;' +
+    'background-color:' + this.bg + ';';
 
     newElem.textContent =  text;
     document.body.append(newElem);    
 };
 
-const doMElem = new DomElement(50, 100, 10, '.select', '#ff8080');
-const doMElem1 = new DomElement(100, 100, 25,'#selecto', '#ff8080');
+const doMElem = new DomElement(50, 100, 25, '.select', '#ff8080');
+const doMElem1 = new DomElement(100, 100, 18,'#selecto', '#ff8080');
 
 doMElem.createElement('Сегодня хороший день!');
 doMElem1.createElement('До того, как начнёте изучать способы работы со стилями и классамив JavaScript,есть одно важное правило.Надеемся, это достаточно очевидно, но мы все равно должны об этом упомянуть.');
